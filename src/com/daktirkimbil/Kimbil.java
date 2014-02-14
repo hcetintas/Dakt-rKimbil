@@ -34,7 +34,7 @@ ProgressDialog dialog;
 	            HastalikId = getIntent().getExtras().getString("hasta").split(",");  
 	            String [] Adi = null;
 	            if(isOnline()){
-	            String url ="http://pauyemeklistesi.com/Kimbil/HastalikAdi.php?Aranan="+getIntent().getExtras().getString("hasta");
+	            String url ="http://example.com/Kimbil/HastalikAdi.php?Aranan="+getIntent().getExtras().getString("hasta");
 	            Log.w("url", url);
 	            try
 	            {
@@ -62,7 +62,7 @@ ProgressDialog dialog;
 	        }
 	    
 public void Siralama(String [] HastalikAdet,String[] Hastalik,String [] HastalikId){
-	Log.w("boyut", String.valueOf(HastalikAdet.length)+"deðer");
+	Log.w("boyut", String.valueOf(HastalikAdet.length)+"deï¿½er");
 	for(int i=0;i<HastalikAdet.length;i++){
 		for(int a=0;a<HastalikAdet.length;a++){
 			Log.w("a", String.valueOf(a));
