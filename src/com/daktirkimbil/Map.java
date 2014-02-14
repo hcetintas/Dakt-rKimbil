@@ -104,7 +104,7 @@ public class Map extends FragmentActivity implements
 
 	List<Place> getHospital(double lat,double lng){
 		String url ="https://maps.googleapis.com/maps/api/place/search/json?types=hospital&location="+lat+"," +
-				lng+"&radius=5000&sensor=false&key=AIzaSyAkP9wB9vMHMcAbqukIfpxcXVoBSkhMvt4";
+				lng+"&radius=5000&sensor=false&key=apikey";
 
 		try {
 			String content = new Data().execute(url).get();
@@ -143,7 +143,7 @@ public class Map extends FragmentActivity implements
 				}
 		  }
 		  else{
-			  Toast.makeText(getApplicationContext(), "Beklenmedik bir hata oluþtu.", Toast.LENGTH_LONG).show();
+			  Toast.makeText(getApplicationContext(), "Beklenmedik bir hata oluï¿½tu.", Toast.LENGTH_LONG).show();
 		  }
 		  if(flag){
 			  gotoCurrentLocation();
