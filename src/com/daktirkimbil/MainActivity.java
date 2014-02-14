@@ -48,7 +48,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		if(Neresi()!=null){
 		adapter =new ArrayAdapter<String>(this,android.R.layout.select_dialog_singlechoice, Neresi());}
 		else{
-			Toast.makeText(getApplicationContext(), "Nette sýkýntý var", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), "Nette sï¿½kï¿½ntï¿½ var", Toast.LENGTH_LONG).show();
 		}
         multitv.setAdapter(adapter);
 
@@ -119,7 +119,7 @@ public class MainActivity extends Activity implements OnClickListener{
 
 		isim = "";
 		
-		String url="http://pauyemeklistesi.com/Kimbil/Hastalik.php?Aranan="+Aranan;
+		String url="http://example.com/Kimbil/Hastalik.php?Aranan="+Aranan;
 		
 if(isOnline()){
 	String[] dizi22 = null;
@@ -179,7 +179,7 @@ return null;
 
 		isim = "";
 		String[] dizi22 =null;
-		String url="http://pauyemeklistesi.com/Kimbil/Hastalik.php?Aranan="+Aranan;
+		String url="http://example.com/Kimbil/Hastalik.php?Aranan="+Aranan;
 		
 if(isOnline()){
             
@@ -210,7 +210,7 @@ return null;
 	public String[] Neresi(){
 
 		String[] dizi2=null;
-		String url="http://pauyemeklistesi.com/Kimbil/Neresi.php";
+		String url="http://example.com/Kimbil/Neresi.php";
 		
 if(isOnline()){
             try
@@ -242,7 +242,7 @@ return null;
 	public String [] Belirtiler(String Aranan){
 
 		String[] belirtiler =null;
-		String url="http://pauyemeklistesi.com/Kimbil/Aranan.php?Aranan="+Aranan;
+		String url="http://example.com/Kimbil/Aranan.php?Aranan="+Aranan;
 		
 if(isOnline()){
             try
@@ -276,7 +276,7 @@ return null;
 		id1=null;
 		id=null;
 		String[] dizi22 =null;
-		String url="http://pauyemeklistesi.com/Kimbil/Aranan.php?Aranan="+Aranan;
+		String url="http://example.com/Kimbil/Aranan.php?Aranan="+Aranan;
 		
 if(isOnline()){
             try
