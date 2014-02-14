@@ -29,7 +29,7 @@ Button BtnHastane;
 		tvBolum = (TextView)findViewById(R.id.textView2);
         BtnHastane = (Button)findViewById(R.id.btnHastane);
         BtnHastane.setOnClickListener(this);
-            String url ="http://pauyemeklistesi.com/Kimbil/HastalikBilgi.php?Aranan="+getIntent().getExtras().getString("HastalikId");
+            String url ="http://example.com/Kimbil/HastalikBilgi.php?Aranan="+getIntent().getExtras().getString("HastalikId");
             Log.w("url", url);
             try
             {
